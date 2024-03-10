@@ -14,6 +14,8 @@ html,body{
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     position: fixed;
+/*     change1 below */
+    top:0px;  
     width: 100%;
     z-index: 99;
 }
