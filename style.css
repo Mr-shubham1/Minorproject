@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#navbar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+#navbar .navleft{
+    display: flex;
+    margin-top: 10px;
+    gap: 4.5vw;
+    padding-right: 2.10vw;
+}
+#navbar .navleft a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.animborder{
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+#main{
+    width: 100%;
+    padding: 0 2vw;
+    margin-bottom: 4vw;
+    
+    
+}
+
+#custom_cursor{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: fixed;
+    /* transform: translate(-50%,-50%) */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+    z-index: 100;
+    
+   
+
+}
+.bigcursor{
+    height: 160px;
+    width: 160px;
+    background-color: rgb(255, 233, 252);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    scale: 0;
+
+}
+
+#main #page1{
+    width: 100%;
+    /* min-height: 100vh; */
+    margin-top: 140px;
+}
+
+#page1 .page1_intro{
+    display: inline-block;
+    overflow: hidden;
+}
+#page1 .page1_intro h1{
+    display: inline-block;
+    font-size: 13.5vw;
+    padding-right: 3vw;
+    transform: translateY(100%);
+    text-transform: uppercase;
+}
+
+#page1 #video_container{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    position: relative;
+}
+
+#video_container #playbtn{
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 30px 25px;
+    border-radius: 50%;
+    z-index: 10;
+
+    opacity: 0;
+    scale: 0;
+
+}
+
+
+
+#video_container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 9;
+}
+
+
+
+#page2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+}
+#page2 .page2_container{
+    width: 31%;
+   
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* .page2_container_1 h2{
+font-size: 2.5vw;
+}
+.page2_container_1 p{
+    font-size: 1.3vw;
+}
+.page2_container_1 ol li{
+    font-size: 1.3vw;
+
+} */
+
+
+
+
+.page2_container_1 #pledge p{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+#page2 .page2_container_2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page2 .page2_container_3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+#page3{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: cornflowerblue; */
+}
+#page3 #p3intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+#page3 #p3cards{
+    width: 100%;
+    height: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#p3cards .p3card{
+    width: 31%;
+    height: 100%;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#p3cards .p3card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.p3card .p3card_about{
+position: absolute;
+/* top: 50%; */
+/* left: 50%; */
+width: 250px;
+height: 40px;
+font-size: .8rem;
+display: flex;
+
+justify-content: space-around;
+/* transform: translate(-50%,-50%); */
+padding: 15px 15px;
+border-radius: 50px;
+cursor: pointer;
+
+
+}
+.p3card .p3card_about .p3card_about_heading{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.p3card .p3card_1_about{
+    background-color:  #e5f0d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.p3card .p3card_2_about{
+    background-color: #f5dfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.p3card .p3card_3_about{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    overflow: hidden;
+    
+}
+.p3card .p3card_about .p3card_about_product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+
+
+
+
+
+#page4{
+    margin-top: 5vw;
+    width: 100%;
+    /* height: 20vw; */
+   
+    display: flex;
+    justify-content: space-between;
+}
+#page4 .p4heading{
+    width: 56%;
+}
+#page4 .p4intro{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* font-size: 1.3rem; */
+    /* font-size: 1.5vw; */
+    padding-right: 5vw;
+    gap: 20px;
+    
+}
+.p4intro #shoptosupport{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.p4intro #shoptosupport p{
+    background-color: black;
+    color: white;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+#page4 .p4heading h2{
+    font-size: 4vw;
+}
+
+
+#page5{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+#page5 .product{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+}
+#page5 .product .price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#page5 .product img{
+width: 100%;
+object-fit: contain;
+}
+
+#page6{
+    width: 100%;
+    height: 30vw;
+}
+
+
+
+
+
+@media (max-width:600px) {
+
+    #navbar .navleft a{
+        font-size: .70rem;
+    }
+    #page2{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+       
+    }
+
+    #page2 .page2_container{
+        width: 60%;
+    }
+
+    .page2_container_1{
+        width: 80% !important;
+        margin-bottom: 20px;
+    }
+
+    #page3 #p3cards{
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+    #p3cards .p3card{
+    width: 60%;
+   
+    }
+    .p3card .p3card_about{
+        
+        width: 80%;
+        font-size: .8rem;
+        
+        }
+
+        #page4{
+           
+           
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           gap: 15px;
+        }
+
+        #page4 .p4intro{
+            width: 78%;
+           
+            
+        }
+    
+}
+
+
+
